@@ -14,7 +14,7 @@ import express from 'express';
 import graphQLHTTP from 'express-graphql';
 import {schema} from './data/schema';
 
-const GRAPHQL_PORT = 8080;
+const GRAPHQL_PORT = process.env.PORT || 8080;
 
 // Expose a GraphQL endpoint
 const graphQLServer = express();
