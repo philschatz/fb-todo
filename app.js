@@ -21,7 +21,7 @@ import Relay, {
 } from 'react-relay';
 
 Relay.injectNetworkLayer(
-  new DefaultNetworkLayer('http://localhost:8080')
+  new DefaultNetworkLayer('https://fb-todo.herokuapp.com')
 );
 
 export default class TodoMVC extends Component {
